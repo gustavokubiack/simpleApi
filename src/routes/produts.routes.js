@@ -1,11 +1,13 @@
 const express = require("express");
 const router = express.Router();
-
+const productController = require("../controllers/api.js");
 // rotas dos produtos
 
 // ==> rotas dos produtos
 
-router.get("/api/v1/all-products"); // listar todos os produtos
-router.post("api/v1/product"); // criar produto
-router.patch("api/v1/product"); // atualizar produto
-router.delete("api/v1/product"); // deletar produto
+router.get("/all", productController.getAllProducts); // listar todos os produtos
+router.post("/add", productController.addProduct); // criar produto
+router.patch("update"); // atualizar produto
+router.delete("delete"); // deletar produto
+
+module.exports = router;
