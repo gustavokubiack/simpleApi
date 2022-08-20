@@ -9,7 +9,7 @@ router.get("/api/v1", (req, res) => {
     res.status(200).json({
       title: "simpleApi",
       message:
-        "Bem vindo ao simpleaApi, um servidor que realiza o cadastro de usuários e suas informações",
+        "Bem vindo ao simpleaApi, um servidor que realiza o cadastro de itens do mercado",
       version: "1.0.0",
     });
   } catch (err) {
